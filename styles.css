@@ -2,6 +2,7 @@ body {
   background-color: rgb(25,25,25);
   color: white;
   font-family: cursive;
+  margin: 10px;
 }
 
 .title {
