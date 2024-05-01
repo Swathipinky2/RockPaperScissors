@@ -1,7 +1,16 @@
 body {
-  background-color: rgb(25,25,25);
+  background-color: rgb(25, 25, 25);
   color: white;
   font-family: cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
 }
 
 .title {
@@ -13,14 +22,14 @@ body {
   height: 50px;
 }
 
-.move-btn { 
+.move-btn {
   background-color: transparent;
   border: 3px solid white;
   width: 120px;
   height: 120px;
   border-radius: 60px;
   margin-right: 10px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .move-btn:hover {
@@ -50,11 +59,24 @@ body {
 }
 
 .reset-btn:hover {
-    background-color: lightgray;
-    color: black;
+  background-color: lightgray;
+  color: black;
 }
 
 .reset-btn:active {
   background-color: darkgray;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .move-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin-right: 5px;
+  }
+
+  .move-icon {
+    height: 40px;
+  }
 }
